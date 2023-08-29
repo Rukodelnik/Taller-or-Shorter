@@ -120,6 +120,7 @@ body{
     background-color: rgb(60,179,113);
 }
 .guess-button{
+    z-index: 10000;
     top: 0;
     bottom: 0;
     opacity: 0;
