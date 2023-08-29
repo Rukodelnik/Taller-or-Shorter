@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Taller or Shorter</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-paragraph-container">
+            <p class = "main-paragraph taller">Taller</p>
+            <p class = "main-paragraph or">or</p>
+            <p class="main-paragraph shorter">Shorter</p>
+        </div>
+        <div class="content-container" data-content-container>
+        </div>
+        <div class="js-score score person-name"></div>
+        <template data-template>
+
+            <div class="box">        
+                
+                <div class="guess-container">
+                    <p class="person-name guess-taller">Who is Taller?</p>
+                    <button class="guess-button-left guess-button" onclick="appear();guess('left');" id="guess-button-left"></button>
+                    <button class="guess-button-right guess-button" onclick="appear();guess('right')" id="guess-button-right"></button>
+                </div>
+                <div class="main-content-container">
+                    <div class="left-content-info" data-left-side>
+                        <img src="" class="left-content-image" data-left-image> 
+                        <div class="left-name person-name-container">
+                            <p class="person-name left-person-name" data-left-name></p>
+                        </div>
+                        <p class="person-name left-height dissappear" data-left-height id="leftHeight"></p>
+                    </div>
+                    <div class="right-content-info" data-right-side>
+                        <img src="" class="right-content-image" data-right-image>  
+                        <div class="right-name person-name-container">
+                            <p class="person-name right-person-name" data-right-name></p>                  
+                        </div>
+                        <p class="person-name right-height dissappear" data-right-height id="rightHeight"></p>
+                    </div>
+                </div>
+               
+            </div>
+        </template>      
+        <div class = "turn-phone-container person-name">
+            <p class="turn-phone">Turn the phone over</p>         
+            <img class="turn-phone-picture" src="turnThePhone.png">
+        </div>
+
+        <button class="action-button dissappear" id="next-button" onclick="location.reload();dissappear();">NEXT</button>
+        <button class="action-button dissappear restart" id="restart-button" onclick="location.reload();dissappear();">RESTART</button>
+        <div class="fail"> 
+        </div>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
